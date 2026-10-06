@@ -16,3 +16,4 @@ spec:
         checks:
         - "validate-ci-results"
         - "policy-bot: main"
+  enableReusableWorkflowsForOrganizationAccess: true
