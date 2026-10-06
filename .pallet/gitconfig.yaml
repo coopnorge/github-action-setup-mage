@@ -6,6 +6,7 @@ kind: RepositoryConfig
 metadata:
   name: repository-config
 spec:
+  visibility: public
   description: GitHub action to set up coop-mage cli
   branches:
     default: main
