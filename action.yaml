@@ -11,7 +11,7 @@ runs:
       uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
       with:
         path: ${{ runner.temp }}/bin/coop-mage
-        key: coop-mage-bin-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('magefiles/**', 'magefile.go', 'go.mod', 'go.sum') }}
+        key: coop-mage-bin-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('magefiles/**', 'magefile.go', 'go.mod', 'go.sum', 'internal/devtool/tools.Dockerfile') }}
 
     - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       if: steps.mage-cache.outputs.cache-hit != 'true'
