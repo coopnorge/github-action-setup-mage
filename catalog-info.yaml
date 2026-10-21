@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: github-action-setup-mage
+  title: "GitHub Action: Setup Mage"
+  description: Installs Mage in a workflow
+  tags: [github-action, mage]
+  annotations:
+    github.com/project-slug: coopnorge/github-action-setup-mage
+spec:
+  type: library
+  owner: engineering
+  lifecycle: production
